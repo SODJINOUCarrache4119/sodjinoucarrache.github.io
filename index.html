@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="portefolio.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body style="background-color: white;">
+    <header>
+       <h1 class="logo">SODJINOU <span>Carrache</span></h1>
+
+        <ul class="menu">
+           <li><a href="#accueil">Accueil</a></li> 
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#projet">Projet</a></li>
+            <li><a href="#compétences">Compétences</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="numero">
+            <p>+229 0141193597</p>
+        </div>
+        <div class="small_menu">
+            <span>
+                <div></div>
+                <div></div>
+            </span>
+            <span>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+    </header>
+
+
+    <section class="page1" id="accueil">
+        <div class="gauche">
+            <h2>Je suis <span>Carrache</span>, Développeur en devenir <br> passionné par le web et le design !</h2>
+            <button class="button">
+                <a href="#projet">Voir mes pojets</a>
+            </button>
+        </div>
+
+        <div class="droit">
+            <img src="image2.jpg" alt="">
+        </div>
+    </section>
+
+    <h3 style="text-align: center; color: #27da80;" id="apropos">A propos</h3>
+    <section class="propos">
+        
+        <div class="gauch">
+            <p>je m'appelle <span class="nom">Carrache</span>, passioné par la <br> créaction de sites web modernes et interactifs <br><br> Je suis actuellement étudiant en <span class="web">Dévelppement web</span>, <br> et je cherche à ameliorer mes compétences en javaScript , HTML et css <br><br>
+            J'adore transformer mes idées en projet concrets <br> et expérimenter avec les nouvelles technologies. </p>
+            <button class="button2">
+                <a href="">Télécharger mon CV</a>
+            </button>
+        </div>
+
+        <div class="droi">
+            <img src="profil.jpg" alt="">
+        </div>
+    </section>
+
+
+
+    <section id="projet" class="projet">
+        <h1 class="">Mes projets</h1>
+
+
+        <div class="prolist">
+            <div class="poje">
+                <img src="pro1.jpg" alt="">
+                <h4>restorant</h4>
+                <p>site d'un restorant chic</p>
+                <button class="button2">
+                    <a href="">voir plus</a>
+                </button>
+            </div>
+
+            <div class="poje">
+                <img src="pro2.jpg" alt="">
+                <h4>Cuisson</h4>
+                <p>Un projet de resto responsive </p>
+                <button class="button2">
+                    <a href="">Voir plus !</a>
+                </button>
+            </div>
+
+
+
+            <div class="poje">
+                <img src="pro3.jpg" alt="">
+                <h4>HTML</h4>
+                <p>Un site d'une salon de cusine</p>
+                <button class="button2">
+                    <a href="">voir plus !</a>
+                </button>
+            </div>
+
+            <div class="poje">
+                <img src="pro4.jpg" alt="">
+                <h4>HTML</h4>
+                <p>Le site d'une entreprise qui fabrique des jus</p>
+                <button class="button2">
+                    <a href="">voir plus ! </a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+  
+       <!-- Section Mes Compétences -->
+<div class="skills" id="compétences">
+    <h2>Mes Compétences</h2>
+
+
+
+
+
+
+    <div class="skills-container">
+
+
+
+        <div class="skills-box">
+            <h3>Soft Skills</h3>
+            <div class="skill">
+                <p>Gestion de projet</p>
+                <div class="progress-bar"><div class="progress" data-percent="80"></div></div>
+            </div>
+            <div class="skill">
+                <p>Résolution de problème</p>
+                <div class="progress-bar"><div class="progress" data-percent="60"></div></div>
+            </div>
+            <div class="skill">
+                <p>Adaptabilité</p>
+                <div class="progress-bar"><div class="progress" data-percent="90"></div></div>
+            </div>
+        </div>
+
+        <div class="skills-box">
+            <h3>Hard Skills</h3>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress" data-percent="9"></div></div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress" data-percent="75"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress" data-percent="70"></div></div>
+            </div>
+            <div class="skill">
+                <p>VS Code</p>
+                <div class="progress-bar"><div class="progress" data-percent="85"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="contact" id="Contact">
+    <h1 class="title">Contactez nous</h1>
+    <div class="form-image">
+        <form action="" id="contact">
+            <input type="text" placeholder="Nom" id="nom">
+            <input type="email" placeholder="Email" id="mail" pattern=".+@gmail\.com" required title="L'adresse e-mail doit se terminer par @gmail.com">
+            <input type="text" placeholder="Objet du message " id="objet" >
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Votre message" ></textarea>
+            <button class="button-clik" type="button-clik" type="submit" onclick="return envoyer()">
+                <a href="">Envoyer votr e message</a>
+                
+            </button>
+            <p id="success"  style="color: #27da80; margin: 15px 3px 2px;" ></p>
+        </form>
+        
+        <div class="images">
+            <img src="contact.jpg" alt="">
+        </div>
+    </div>
+
+   
+</section>
+
+
+
+<footer>&copy; 2025 SODJINOU. Tous droits réservés.</footer>
+
+<!-- CSS pour la section Compétences -->
+
+
+ 
+
+
+</body>
+</html>
